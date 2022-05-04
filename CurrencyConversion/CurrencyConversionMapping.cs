@@ -19,10 +19,10 @@ namespace CurrencyConversion
         [Name("Country")]
         public string Country { get; set; }
 
-        [Name("Amount of Currency")]
+        [Name("Amount")]
         public double ConversionRate { get; set; }
 
-        [Name("Path for the best conversion rate")]
+        [Name("Path")]
         public string ConversionPath { get; set; }
     }
 }

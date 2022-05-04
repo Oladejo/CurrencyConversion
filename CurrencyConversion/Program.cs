@@ -96,7 +96,7 @@ namespace CurrencyConversion
                                     CurrencyCode = currentMap[key].toCurrencyCode,
                                     Country = ExtractCountryNameFromCurrencyName(currentMap[key].toCurrencyName),
                                     ConversionRate = currentRatio * currentMap[key].exchangeRate,
-                                    ConversionPath = $"{ pipeDelimited } | { key }"
+                                    ConversionPath = $"{pipeDelimited}|{key}"
                                 });
 
                                 queue.Enqueue(currencyStart);
@@ -107,7 +107,7 @@ namespace CurrencyConversion
 
                             queue.Enqueue(key);
                             queueRatio.Enqueue(currentRatio * currentMap[key].exchangeRate);
-                            pipeDelimited = $"{pipeDelimited} | {key}";
+                            pipeDelimited = $"{pipeDelimited}|{key}";
                         }
                     }
                 }
