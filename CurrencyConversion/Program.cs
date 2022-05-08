@@ -12,7 +12,7 @@ namespace CurrencyConversion
 {
     internal class Program
     {
-        static string url = "https://api-coding-challenge.neofinancial.com/currency-conversion?seed=17420";
+        static string url = "https://neofinancial.free.beeceptor.com/currency-conversion";
         
         static async Task Main(string[] args)
         {
